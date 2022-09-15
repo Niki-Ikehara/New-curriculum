@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: mediumblue;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+.bar {
+  position: absolute;
+  width: inherit;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+.top {
+  top: 28%;
+}
+.middle {
+  top: 48%;
+}
+.bottom {
+  top: 68%;
+}
+#close .top {
+  transform: rotate(45deg);
+}
+#close .bottom {
+  transform: rotate(-45deg);
+}
+.menus {
+  background-color: mediumblue;
+  width: 300px;
+  position: fixed;
+  top: 0;
+}
+.menu-list {
+  list-style: none;
+}
+.menu-list a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.menu-list li {
+  line-height: 2em;
+}
